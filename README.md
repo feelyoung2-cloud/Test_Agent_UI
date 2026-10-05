@@ -33,11 +33,25 @@
 - `google-plugins` ([google/skills](https://github.com/google/skills)) — Google Cloud 관련 플러그인 17개
 - `superpowers-marketplace`에는 `superpowers` 외에 `superpowers-chrome`, `episodic-memory` 등 9개가 더 있음
 
-## 마켓플레이스가 없어 수동 설치가 필요한 항목
+## 저장소에 직접 설치한 스킬
 
-- **playwright** ([microsoft/playwright](https://github.com/microsoft/playwright)): `npm i -g @playwright/cli@latest` 후 `playwright-cli install --skills`
+마켓플레이스가 없어 `.claude/skills/`, `.claude/agents/`에 파일을 직접 넣었습니다. 설명은 `.claude/CLAUDE.md`에도 있습니다.
+
+| 스킬 | 출처 | 비고 |
+|---|---|---|
+| `playwright-cli` | [microsoft/playwright](https://github.com/microsoft/playwright) | `playwright-cli install --skills`로 생성. 쓰려면 `npm i -g @playwright/cli@latest` 필요 |
+| `design-system` 외 2개 + 에이전트 5개 | [revfactory/harness-100](https://github.com/revfactory/harness-100) `36-design-system` | Apache-2.0, 라이선스는 `.claude/licenses/harness-100-LICENSE` |
+| `fullstack-webapp` 외 2개 + 에이전트 5개 | [revfactory/harness-100](https://github.com/revfactory/harness-100) `16-fullstack-webapp` | 위와 동일 |
+
+- harness-100의 스킬 파일은 업스트림에서 소문자 `skill.md`인데, Claude Code가 인식하도록 `SKILL.md`로 바꿨습니다.
+- 두 하네스가 모두 `_workspace/00_input.md`에 쓰므로 동시에 돌리지 마세요.
+- harness-100에는 이 밖에 98개 하네스가 더 있습니다. 필요하면 `cp -r en/<NN-name>/.claude/ <프로젝트>/.claude/`로 복사하되, 복사 후 `skill.md`를 `SKILL.md`로 바꿔야 합니다.
+
+## 아직 설치하지 않은 항목
+
 - **Agent-Reach** ([Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)): `pip install agent-reach` 후 `agent-reach install --env=auto`. 기본은 점검만 하며, `--system`을 붙여야 시스템 변경과 스킬 등록이 일어남. 이 스킬은 웹 검색·URL 요청 전반에 우선 적용되도록 작성되어 있으니 필요할 때만 설치할 것
-- **harness-100** ([revfactory/harness-100](https://github.com/revfactory/harness-100)): 하네스 폴더를 골라 `cp -r en/<NN-name>/.claude/ <프로젝트>/.claude/`로 복사. 전부 복사하면 스킬이 수백 개가 되므로 UI 프로젝트라면 `36-design-system`, `16-fullstack-webapp` 정도를 후보로 볼 것
+- **lifeofpi-ux/ppt-automation**: 저장소가 404(비공개이거나 주소 오류)라서 확인하지 못함
+- **lazyowen.com Top 5 가이드**: 클라우드 환경의 네트워크 정책이 도메인을 차단해 읽지 못함
 
 ## 참고
 
