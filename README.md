@@ -14,6 +14,7 @@
 | `harness` | [revfactory/harness](https://github.com/revfactory/harness) | 에이전트 팀(하네스) 설계 메타 스킬 |
 | `kordoc` | [chrisryugj/kordoc](https://github.com/chrisryugj/kordoc) | HWP/HWPX/PDF/DOCX 등 한국 공문서 파싱·생성 |
 | `watch` | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | 영상(URL/로컬) 시청·분석: yt-dlp + ffmpeg + 자막/Whisper (Python 3.10+ 필요) |
+| `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | UI 디자인 품질 스킬. 훅이 세션 시작·도구 호출·종료마다 실행되며 엔진 바이너리를 GitHub 릴리스에서 받아 실행하므로, 원치 않으면 `enabledPlugins`에서 `false`로 되돌릴 것 |
 
 ## 등록만 하고 꺼 둔 플러그인
 
@@ -21,7 +22,6 @@
 
 | 플러그인 | 꺼 둔 이유 |
 |---|---|
-| `impeccable@impeccable` | UI 디자인 스킬. 훅이 세션 시작·도구 호출·종료마다 실행되고 엔진 바이너리를 GitHub 릴리스에서 받아 실행함 (UI 프로젝트라면 켜는 것을 권장) |
 | `claude-mem@thedotmack` | 기본값이 로그인이 필요한 호스팅 메모리(세션 내용이 외부로 전송)이며 모든 이벤트에 훅이 걸림 |
 | `ecc@ecc` | SKILL.md 1,000개 이상 + 훅 24개로 컨텍스트 부담이 큼 |
 | `codex@openai-codex` | Codex CLI(`npm i -g @openai/codex`)와 로그인이 필요함 |

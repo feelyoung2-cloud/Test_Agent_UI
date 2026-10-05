@@ -23,7 +23,7 @@
     "harness@harness-marketplace": true,
     "kordoc@kordoc": true,
     "watch@claude-video": true,
-    "impeccable@impeccable": false,
+    "impeccable@impeccable": true,
     "claude-mem@thedotmack": false,
     "ecc@ecc": false,
     "codex@openai-codex": false,
