@@ -51,7 +51,6 @@
 
 - **Agent-Reach** ([Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)): `pip install agent-reach` 후 `agent-reach install --env=auto`. 기본은 점검만 하며, `--system`을 붙여야 시스템 변경과 스킬 등록이 일어남. 이 스킬은 웹 검색·URL 요청 전반에 우선 적용되도록 작성되어 있으니 필요할 때만 설치할 것
 - **lifeofpi-ux/ppt-automation**: 저장소가 404(비공개이거나 주소 오류)라서 확인하지 못함
-- **lazyowen.com Top 5 가이드**: 클라우드 환경의 네트워크 정책이 도메인을 차단해 읽지 못함
 
 ## 참고
 
